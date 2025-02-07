@@ -1,0 +1,65 @@
+/*
+com 2 valores 
+padding: top/botton - right/left
+com 3 valores
+padding: top - rught/left - botton
+com 4 valores
+padding: top - right - botton -left
+border tem 3 valores... cor,... e ..
+*/
+
+.tarefa {
+    box-sizing: border-box;
+    width: 1024px;
+    border: 1px solid var(--cinza-tundora);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.descricao_tarefa {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h2 {
+    border-right: 1px #5c5c5c solid;
+    padding-right: 16px;
+}
+
+.etiqueta, .etiqueta__prioridade {
+    display: flex;
+    border: 1px solid var(--cinza-nobel);
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px 8px; /* Espaçamento (padding) */
+    color: var(--cinza-nobel);
+
+}
+
+.etiquetas {
+    display: flex; /* Colocar um ao lado do outro */
+    gap: 8px;
+}
+
+.etiqueta__prioridade{
+    border: none;
+
+    color: var(--cinza-nobel);
+}
+
+.etiqueta--alta{
+    background-color: var(--vermelho);
+}
+
+.etiqueta--media{
+    background-color: var(--amarelo);
+}
+
+.etiqueta--baixa{
+    background-color: var(--verde);
+}
